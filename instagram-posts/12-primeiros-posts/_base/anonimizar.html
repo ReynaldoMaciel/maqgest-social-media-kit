@@ -1,0 +1,14 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;width:1300px;height:1838px;overflow:hidden;background:#fff}
+#wrap{position:relative;width:1300px;height:1838px}
+#wrap>img{display:block;width:1300px;height:1838px}
+.b{position:absolute;overflow:hidden}
+.b img{position:absolute;width:1300px;height:1838px;filter:blur(10px)}
+</style></head><body><div id="wrap"><img id="src"></div>
+<script>
+const q=new URLSearchParams(location.search);const src=q.get('src');const R=JSON.parse(q.get('r'));
+document.getElementById('src').src=src;
+const w=document.getElementById('wrap');
+R.forEach(([x,y,ww,hh,f])=>{const d=document.createElement('div');d.className='b';d.style.cssText=`left:${x}px;top:${y}px;width:${ww}px;height:${hh}px`;
+ const i=document.createElement('img');i.src=src;i.style.left=-x+'px';i.style.top=-y+'px';if(f){i.style.filter=f;const m="linear-gradient(to right, transparent, black 50px, black calc(100% - 50px), transparent), linear-gradient(to bottom, transparent, black 50px, black calc(100% - 50px), transparent)";d.style.webkitMaskImage=d.style.maskImage=m;d.style.webkitMaskComposite="source-in";d.style.maskComposite="intersect";}d.appendChild(i);w.appendChild(d);});
+</script></body></html>

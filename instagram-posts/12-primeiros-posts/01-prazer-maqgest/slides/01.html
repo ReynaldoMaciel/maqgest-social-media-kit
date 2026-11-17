@@ -1,0 +1,36 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="../../_base/base.css"><style>
+.brand{position:absolute;top:88px;left:var(--gutter);height:48px}
+.head{position:absolute;top:196px;left:var(--gutter);right:var(--gutter)}
+.head .body{margin-top:28px}
+.photo{position:absolute;left:0;right:0;bottom:0;height:759px;overflow:hidden}
+.stage{position:absolute;left:0;top:-581.9px;width:1856px;height:2304px;transform:scale(.58190);transform-origin:0 0}
+.stage>img{display:block;width:1856px;height:2304px}
+.screen{position:absolute;overflow:hidden;background:#fff;box-shadow:0 0 0 7px #0e0f10}
+.screen img{display:block;width:100%;height:100%;object-fit:cover;object-position:top left}
+.laptop{left:309px;top:1221px;width:897px;height:554px}
+.phone{left:0;top:0;width:780px;height:1688px;border-radius:110px;transform-origin:0 0;box-shadow:0 0 0 26px #0e0f10}
+</style></head><body>
+<div class="slide slide--dark">
+  <img class="brand" src="../../../../assets/brand/maqgest-logo-branca.svg" alt="Maqgest">
+  <div class="head">
+    <h1 class="cover-title">Orçamento em minutos, <span class="hl">onde você estiver.</span></h1>
+    <p class="body muted">Catálogo, clientes e cotações de máquinas agrícolas.</p>
+  </div>
+  <div class="photo"><div class="stage">
+    <img src="../imagens/mockup-notebook-celular.png" alt="">
+    <div class="screen laptop"><img src="../../../../assets/screenshots/hero-dashboard-generico.png" alt=""></div>
+    <div class="screen phone" id="phone"><img src="../../../../assets/screenshots/mobile-dashboard-generico.png" alt=""></div>
+  </div></div>
+</div>
+<script>
+// homografia: retângulo do print -> 4 cantos da tela verde do celular
+function adj(m){return[m[4]*m[8]-m[5]*m[7],m[2]*m[7]-m[1]*m[8],m[1]*m[5]-m[2]*m[4],m[5]*m[6]-m[3]*m[8],m[0]*m[8]-m[2]*m[6],m[2]*m[3]-m[0]*m[5],m[3]*m[7]-m[4]*m[6],m[1]*m[6]-m[0]*m[7],m[0]*m[4]-m[1]*m[3]]}
+function mm(a,b){const c=[];for(let i=0;i<3;i++)for(let j=0;j<3;j++){let s=0;for(let k=0;k<3;k++)s+=a[3*i+k]*b[3*k+j];c[3*i+j]=s}return c}
+function mv(m,v){return[m[0]*v[0]+m[1]*v[1]+m[2]*v[2],m[3]*v[0]+m[4]*v[1]+m[5]*v[2],m[6]*v[0]+m[7]*v[1]+m[8]*v[2]]}
+function basis(p){const m=[p[0],p[2],p[4],p[1],p[3],p[5],1,1,1];const v=mv(adj(m),[p[6],p[7],1]);return mm(m,[v[0],0,0,0,v[1],0,0,0,v[2]])}
+function fit(el,w,h,dst){let t=mm(basis(dst),adj(basis([0,0,w,0,0,h,w,h])));t=t.map(x=>x/t[8]);
+ el.style.transform='matrix3d('+[t[0],t[3],0,t[6],t[1],t[4],0,t[7],0,0,1,0,t[2],t[5],0,t[8]].join(',')+')'}
+// ordem: topo-esq, topo-dir, base-esq, base-dir
+fit(document.getElementById('phone'),780,1688,[1337,1855, 1573,1856, 1398,2011, 1679,2011]);
+</script>
+</body></html>

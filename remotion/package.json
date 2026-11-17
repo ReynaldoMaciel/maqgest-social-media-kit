@@ -1,0 +1,22 @@
+{
+  "name": "maqgest-remotion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Edição dos Reels da MaqGest com Remotion",
+  "scripts": {
+    "dev": "remotion studio",
+    "render:post02": "remotion render Post02Reels out/post02-reels.mp4",
+    "upgrade": "remotion upgrade"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.544",
+    "@remotion/transitions": "4.0.544",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.544"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.6.3"
+  }
+}

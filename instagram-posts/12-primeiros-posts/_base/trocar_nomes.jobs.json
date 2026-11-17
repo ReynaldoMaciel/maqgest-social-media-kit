@@ -1,0 +1,388 @@
+{
+ "tmp": null,
+ "files": [
+  {
+   "src": "/Users/rey/projects/maqgest-social-media-kit/assets/screenshots/hero-dashboard.webp",
+   "dst": "/Users/rey/projects/maqgest-social-media-kit/assets/screenshots/hero-dashboard-generico.png",
+   "jobs": [
+    {
+     "id": "hd-titulo",
+     "box": [
+      398,
+      132,
+      500,
+      56
+     ],
+     "replace": [
+      [
+       "Rafael",
+       "José"
+      ]
+     ]
+    },
+    {
+     "id": "hd-avatar",
+     "box": [
+      1922,
+      16,
+      62,
+      58
+     ],
+     "replace": [
+      [
+       "RS",
+       "JS"
+      ]
+     ]
+    },
+    {
+     "id": "hd-usuario",
+     "box": [
+      28,
+      1165,
+      240,
+      62
+     ],
+     "replace": [
+      [
+       "RS",
+       "JS"
+      ],
+      [
+       "Rafael Souza",
+       "José da Silva"
+      ]
+     ]
+    },
+    {
+     "id": "hd-tabela",
+     "box": [
+      1395,
+      670,
+      200,
+      450
+     ],
+     "replace": [
+      [
+       "Agro Vale Ltda.",
+       "Agro Exemplo Ltda."
+      ],
+      [
+       "Fazenda Boa Esperança",
+       "Fazenda Exemplo"
+      ],
+      [
+       "Coop. Rio Verde",
+       "Coop. Exemplo"
+      ],
+      [
+       "Grupo Santa Clara",
+       "Grupo Exemplo"
+      ],
+      [
+       "Sítio Três Irmãos",
+       "Sítio Exemplo"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "src": "/Users/rey/projects/maqgest-social-media-kit/assets/screenshots/mobile-dashboard.webp",
+   "dst": "/Users/rey/projects/maqgest-social-media-kit/assets/screenshots/mobile-dashboard-generico.png",
+   "jobs": [
+    {
+     "id": "md-avatar",
+     "box": [
+      670,
+      22,
+      84,
+      84
+     ],
+     "replace": [
+      [
+       "RS",
+       "JS"
+      ]
+     ]
+    },
+    {
+     "id": "md-nome",
+     "box": [
+      478,
+      160,
+      190,
+      64
+     ],
+     "replace": [
+      [
+       "Rafael",
+       "José"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "src": "/Users/rey/projects/maqgest-social-media-kit/assets/screenshots/mobile-nova-cotacao.webp",
+   "dst": "/Users/rey/projects/maqgest-social-media-kit/assets/screenshots/mobile-nova-cotacao-generico.png",
+   "jobs": [
+    {
+     "id": "mn-avatar",
+     "box": [
+      670,
+      22,
+      84,
+      84
+     ],
+     "replace": [
+      [
+       "RS",
+       "JS"
+      ]
+     ]
+    },
+    {
+     "id": "mn-c1",
+     "box": [
+      96,
+      1122,
+      420,
+      44
+     ],
+     "replace": [
+      [
+       "Agro Vale Ltda.",
+       "Agro Exemplo Ltda."
+      ]
+     ]
+    },
+    {
+     "id": "mn-c2",
+     "box": [
+      96,
+      1310,
+      440,
+      46
+     ],
+     "replace": [
+      [
+       "Fazenda Boa Esperança",
+       "Fazenda Exemplo"
+      ]
+     ]
+    },
+    {
+     "id": "mn-c3",
+     "box": [
+      96,
+      1499,
+      420,
+      44
+     ],
+     "replace": [
+      [
+       "Coop. Rio Verde",
+       "Coop. Exemplo"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "src": "/Users/rey/projects/maqgest-social-media-kit/assets/screenshots/passo-1-cliente.webp",
+   "dst": "/Users/rey/projects/maqgest-social-media-kit/assets/screenshots/passo-1-cliente-generico.png",
+   "jobs": [
+    {
+     "id": "p1-c1",
+     "box": [
+      64,
+      562,
+      300,
+      34
+     ],
+     "replace": [
+      [
+       "Agro Vale Ltda.",
+       "Agro Exemplo Ltda."
+      ]
+     ]
+    },
+    {
+     "id": "p1-c2",
+     "box": [
+      64,
+      657,
+      300,
+      34
+     ],
+     "replace": [
+      [
+       "Fazenda Boa Esperança",
+       "Fazenda Exemplo"
+      ]
+     ]
+    },
+    {
+     "id": "p1-c3",
+     "box": [
+      64,
+      752,
+      300,
+      34
+     ],
+     "replace": [
+      [
+       "Coop. Rio Verde",
+       "Coop. Exemplo"
+      ]
+     ]
+    },
+    {
+     "id": "p1-c4",
+     "box": [
+      64,
+      847,
+      300,
+      34
+     ],
+     "replace": [
+      [
+       "Grupo Santa Clara",
+       "Grupo Exemplo (on a plain white background, no highlight box)"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "src": "/Users/rey/projects/maqgest-social-media-kit/assets/screenshots/passo-2-produtos.webp",
+   "dst": "/Users/rey/projects/maqgest-social-media-kit/assets/screenshots/passo-2-produtos-generico.png",
+   "jobs": [
+    {
+     "id": "p2-cliente",
+     "box": [
+      1080,
+      292,
+      260,
+      32
+     ],
+     "replace": [
+      [
+       "Agro Vale Ltda.",
+       "Agro Exemplo Ltda."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "src": "/Users/rey/projects/maqgest-social-media-kit/assets/screenshots/passo-3-proposta.webp",
+   "dst": "/Users/rey/projects/maqgest-social-media-kit/assets/screenshots/passo-3-proposta-generico.png",
+   "jobs": [
+    {
+     "id": "p3-cliente",
+     "box": [
+      1080,
+      248,
+      260,
+      34
+     ],
+     "replace": [
+      [
+       "Agro Vale Ltda.",
+       "Agro Exemplo Ltda."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "src": "/Users/rey/projects/maqgest-social-media-kit/assets/screenshots/cotacao-pagina-1-anonimizada.png",
+   "dst": "/Users/rey/projects/maqgest-social-media-kit/assets/screenshots/cotacao-pagina-1-anonimizada.png",
+   "jobs": [
+    {
+     "id": "c1-cliente",
+     "box": [
+      248,
+      246,
+      150,
+      27
+     ],
+     "replace": [
+      [
+       "Grupo Santa Clara",
+       "Grupo Exemplo"
+      ]
+     ]
+    },
+    {
+     "id": "c1-vendedor",
+     "box": [
+      272,
+      1178,
+      108,
+      26
+     ],
+     "replace": [
+      [
+       "Rafael Souza",
+       "José da Silva"
+      ]
+     ]
+    },
+    {
+     "id": "c1-ass-cliente",
+     "box": [
+      400,
+      1636,
+      262,
+      34
+     ],
+     "replace": [
+      [
+       "GRUPO SANTA CLARA",
+       "GRUPO EXEMPLO"
+      ]
+     ]
+    },
+    {
+     "id": "c1-ass-vendedor",
+     "box": [
+      905,
+      1590,
+      200,
+      80
+     ],
+     "replace": [
+      [
+       "RAFAEL SOUZA",
+       "JOSÉ DA SILVA"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "src": "/Users/rey/projects/maqgest-social-media-kit/assets/screenshots/cotacao-pagina-2-anonimizada.png",
+   "dst": "/Users/rey/projects/maqgest-social-media-kit/assets/screenshots/cotacao-pagina-2-anonimizada.png",
+   "jobs": [
+    {
+     "id": "c2-vendedor",
+     "box": [
+      895,
+      1342,
+      190,
+      34
+     ],
+     "replace": [
+      [
+       "RAFAEL SOUZA",
+       "JOSÉ DA SILVA"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}
